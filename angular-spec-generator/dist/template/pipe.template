@@ -1,0 +1,8 @@
+import { {bigName}Pipe } from './{name}.pipe';
+
+describe('{bigName}Pipe', () => {
+  it('create an instance', () => {
+    const pipe = new {bigName}Pipe();
+    expect(pipe).toBeTruthy();
+  });
+});

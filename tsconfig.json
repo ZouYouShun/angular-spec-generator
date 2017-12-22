@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": []
+}
+// "baseUrl": "src",
+// "paths": {
+//     "@routers/*": ["routers/*"],
+//     "@apis/*": ["apis/*"],
+//     "@libs/*": ["libs/*"]
+// }

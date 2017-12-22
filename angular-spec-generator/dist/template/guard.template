@@ -1,0 +1,16 @@
+import { TestBed, async, inject } from '@angular/core/testing';
+
+import { {bigName}Guard } from './{name}.guard';
+
+describe('{bigName}Guard', () => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [{bigName}Guard]
+    });
+  });
+
+  it('should ...', inject([{bigName}Guard], (guard: {bigName}Guard) => {
+    expect(guard).toBeTruthy();
+  }));
+});
+
