@@ -5,7 +5,8 @@
       "/src/template",
       "CHANGELOG.md",
       "README.md",
-      "package.json"
+      "package.json",
+      "LICENSE.txt"
     ]
   }
 }
