@@ -1,17 +1,85 @@
 {
-    // 使用 IntelliSense 以得知可用的屬性。
-    // 暫留以檢視現有屬性的描述。
-    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}\\dist\\index.js",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        }
-    ]
+  // 使用 IntelliSense 以得知可用的屬性。
+  // 暫留以檢視現有屬性的描述。
+  // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "test spec generator",
+      "program": "${workspaceFolder}/dist/index.js",
+      "sourceMaps": true,
+      "args": [
+        "/Users/zouyoushun/Project/angular-spec-generator/test-spec",
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "generator type=c",
+      "program": "${workspaceFolder}/dist/index.js",
+      "sourceMaps": true,
+      "args": [
+        "/Users/zouyoushun/Project/angular-spec-generator/test-spec",
+        "--type=c",
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "generator type=d",
+      "program": "${workspaceFolder}/dist/index.js",
+      "sourceMaps": true,
+      "args": [
+        "/Users/zouyoushun/Project/angular-spec-generator/test-spec",
+        "--type=d",
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "generator type=s",
+      "program": "${workspaceFolder}/dist/index.js",
+      "sourceMaps": true,
+      "args": [
+        "/Users/zouyoushun/Project/angular-spec-generator/test-spec",
+        "--type=s",
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "generator type=p",
+      "program": "${workspaceFolder}/dist/index.js",
+      "sourceMaps": true,
+      "args": [
+        "/Users/zouyoushun/Project/angular-spec-generator/test-spec",
+        "--type=p",
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "generator type=g",
+      "program": "${workspaceFolder}/dist/index.js",
+      "sourceMaps": true,
+      "args": [
+        "/Users/zouyoushun/Project/angular-spec-generator/test-spec",
+        "--type=g",
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "generator error string",
+      "program": "${workspaceFolder}/dist/index.js",
+      "sourceMaps": true,
+      "args": [
+        "/Users/zouyoushun/Project/angular-spec-generator/test-spec",
+        "--type=gsdf",
+      ]
+    },
+  ]
 }

@@ -1,0 +1,11 @@
+{
+  "move": {
+    "target": "angular-spec-generator",
+    "files": [
+      "/src/template",
+      "CHANGELOG.md",
+      "README.md",
+      "package.json"
+    ]
+  }
+}

@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es6",
+        "target": "es5",
         "moduleResolution": "node",
         "sourceMap": false,
         "declaration": false,
-        "outDir": "dist",
+        "outDir": "angular-spec-generator",
         "typeRoots": [
             "node_modules/@types"
         ]

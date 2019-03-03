@@ -1,21 +1,28 @@
 {
-  "name": "generate-spec",
-  "version": "1.0.1",
-  "description": "generate exist angular file spec by cli",
-  "main": "index.js",
+  "name": "angular-spec-generator",
+  "version": "1.1.0",
+  "description": "generate exist angular file spec by cli.",
+  "author": "AlanZou",
+  "main": " ./index.js",
+  "bin": {
+    "angular-spec-generator": "./index.js"
+  },
   "scripts": {
     "delete": "rimraf dist",
     "clean": "rimraf package-lock.json node_modules",
     "cleanAndUpdate": "ncu -a && npm run clean && ncu -d -a && npm install",
     "build": " npm run build-ts && npm run tslint",
+    "build:prod": "tsc -p tsconfig.prod.json --removeComments",
     "build-ts": "tsc --removeComments",
     "watch-ts": "tsc --removeComments -w",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "minify": "uglifyjs dist/index.js -m -o dist/index.js",
-    "prebuild:prod": "tsc-bundle src/index.ts dist/index.js --removeComments",
-    "build:prod": "npm run minify && node addenv"
+    "minify": "alang g uglify angular-spec-generator",
+    "addenv": "alang h addenv angular-spec-generator/index.js",
+    "move": "alang h move",
+    "prebuild:deploy": "npm run build:prod && npm run addenv && npm run move",
+    "build:deploy": "npm run minify",
+    "deploy": "cd angular-spec-generator && npm publish"
   },
-  "author": "Alan Zou",
   "repository": {
     "type": "git",
     "url": "https://github.com/ZouYouShun/angular-spec-generator"
@@ -26,16 +33,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.3.0",
-    "clear": "0.0.1",
-    "figlet": "^1.2.0",
+    "chalk": "^2.4.2",
+    "clear": "0.1.0",
     "string-template": "^1.0.0"
   },
   "devDependencies": {
-    "uglify-js": "^3.1.8",
-    "@types/node": "^8.0.49",
-    "nodemon": "^1.12.1",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.1"
+    "@types/node": "^11.10.4",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333"
   }
 }
