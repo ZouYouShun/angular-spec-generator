@@ -33,3 +33,5 @@ Thumbs.db
 
 # Ignore built ts files
 dist/**/*
+test-spec/*
+angular-spec-generator/*
