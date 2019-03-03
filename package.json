@@ -1,11 +1,11 @@
 {
-  "name": "generate-spec",
+  "name": "angular-spec-generator",
   "version": "1.1.0",
   "description": "generate exist angular file spec by cli.",
   "author": "AlanZou",
-  "main": " ./dist/index.js",
+  "main": " ./index.js",
   "bin": {
-    "angular-spec-generator": "./dist/index.js"
+    "angular-spec-generator": "./index.js"
   },
   "scripts": {
     "delete": "rimraf dist",
